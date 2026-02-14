@@ -1,0 +1,168 @@
+/* ========================================
+   VALENTINE'S DAY 2026 - STYLE.CSS
+   Theme: Sweet Pink & Romantic Bokeh
+   ========================================
+*/
+
+:root {
+    --primary-pink: #ff8fa3;
+    --deep-rose: #e91e63;
+    --soft-cream: #fffafa;
+    --pastel-pink: #ffe4e8;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --text-dark: #5c4146;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--soft-cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Background Animation Layer (Canvas) */
+#petalCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* SWEET BACKGROUND: Soft blurred bokeh lights/hearts */
+    background: linear-gradient(rgba(255, 230, 235, 0.3), rgba(255, 240, 245, 0.4)), 
+                url('https://images.unsplash.com/photo-1579294276107-1e5f4d1e2e28?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    border-bottom: 8px solid white;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(3rem, 10vw, 6.5rem);
+    color: var(--deep-rose);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Interactive Message Section --- */
+.love-message {
+    padding: 5rem 10%;
+    position: relative;
+    z-index: 2;
+}
+
+.message-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    border: 2px solid white;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(233, 30, 99, 0.08);
+}
+
+.message-box h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: var(--deep-rose);
+    margin-bottom: 1rem;
+}
+
+/* Input Styling */
+.input-group {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+input[type="text"] {
+    padding: 18px 25px;
+    border: 2px solid var(--primary-pink);
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input[type="text"]:focus {
+    width: 65%;
+    border-color: var(--deep-rose);
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.2);
+}
+
+button {
+    background: var(--deep-rose);
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #c2185b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+}
+
+/* Personalized Result Area */
+#resultContainer {
+    margin-top: 2rem;
+}
+
+.personalized-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: var(--deep-rose);
+    padding: 10px;
+}
+
+.heart-icon {
+    font-size: 2.5rem;
+    color: var(--deep-rose);
+    margin-top: 15px;
+    animation: heartBeat 1.2s infinite;
+}
+
+/* --- Gallery Section --- */
+.gallery {
+    padding: 6rem 10%;
+    background-color: var(--pastel-pink);
+}
+
+.gallery h3 {
+    text-align: center;
+    font-size

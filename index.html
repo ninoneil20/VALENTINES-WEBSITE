@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="petalCanvas"></canvas>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Happy Valentine's Day</h1>
+            <p class="fade-in-delayed">Celebrating a love that blooms forever.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="love-message">
+            <div class="message-box">
+                <h2>A Special Note For You</h2>
+                <p>Enter your name to see a message from the heart.</p>
+                <div class="input-group">
+                    <input type="text" id="userName" placeholder="Your name here..." aria-label="Enter name">
+                    <button id="generateBtn">Reveal Magic</button>
+                </div>
+                
+                <div id="resultContainer" class="hidden">
+                    <div class="divider">🌸</div>
+                    <p class="personalized-text">
+                        <span id="displayName"></span>, <span id="randomNote"></span>
+                    </p>
+                    <div class="heart-icon">❤</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h3>The Valentine's Bouquet</h3>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="img-frame" style="background: #ffc1cc;">🌹</div>
+                    <h4>Eternal Red</h4>
+                    <p>Classic roses for a timeless love story.</p>
+                </div>
+                <div class="card">
+                    <div class="img-frame" style="background: #f8bbd0;">🌷</div>
+                    <h4 >Soft Tulips</h4>
+                    <p>Symbolizing deep care and new beginnings.</p>
+                </div>
+                <div class="card">
+                    <div class="img-frame" style="background: #fff0f5;">🌸</div>
+                    <h4>Spring Cherry</h4>
+                    <p>Appreciating the fleeting beauty of life.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Happy Valentine's Day 2026 | Built with Love</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
