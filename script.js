@@ -61,7 +61,13 @@ const messages = [
     "You bring so much warmth to those around you; thank you for that.",
     "Passing along a little sunshine to brighten your day!",
     "May you feel celebrated and appreciated today!",
-    "Wishing you a day as lovely and kind as you are."
+    "Wishing you a day as lovely and kind as you are.",
+    "your kindness is a gift the whole world appreciates.",
+    "you deserve a day filled with as much joy as you give others.",
+    "you are a masterpiece that everyone is lucky to admire.",
+    "may your heart always be as full as a garden in bloom.",
+    "you bring so much warmth to those around you.",
+    "the world needs more people like you."
 ];
 
 const generateBtn = document.getElementById('generateBtn');
@@ -92,3 +98,4 @@ generateBtn.addEventListener('click', () => {
 window.addEventListener('resize', initPetals);
 initPetals();
 render();
+
